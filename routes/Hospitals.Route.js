@@ -20,6 +20,7 @@ router.get("/", async (req, res) => {
     let reports = await ReportModel.find();
     let appointments = await AppointmentModel.find();
     let doctors = await DoctorModel.find();
+    
     let data = {
       admin: admins.length,
       patient: patients.length,

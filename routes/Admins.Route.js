@@ -6,6 +6,7 @@ const nodemailer = require("nodemailer");
 const { NurseModel } = require("../models/Nurse.model");
 const { DoctorModel } = require("../models/Doctor.model");
 const { PatientModel } = require("../models/Patient.model");
+// const {authenticate} = require("../middlewares/adminAuth");
 
 const router = express.Router();
 
@@ -18,6 +19,10 @@ router.get("/", async (req, res) => {
     res.status(400).send({ error: "Something went wrong" });
   }
 });
+
+// router.get("/userProfile" , async(req,res)=>{
+//   res.send({user:req.userId })
+// })
 
 router.post("/register", async (req, res) => {
   const { email } = req.body;
