@@ -11,7 +11,7 @@ const authenticate = (req, res, next) => {
       const adminID = decoded.adminID;
       
       req.body.adminID = adminID;
-      // req.userId = "adminID"
+      
       
       next();
     } else {

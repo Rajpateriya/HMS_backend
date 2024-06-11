@@ -1,1 +1,3 @@
-Main Frontend GIT Repo : https://github.com/Rajpateriya/MedTech_Solutions-HMS
+frontend repo : https://github.com/Rajpateriya/MedTech_Solutions-HMS
+
+live link : https://medtech-solutions.vercel.app/
